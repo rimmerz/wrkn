@@ -1,0 +1,258 @@
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #aeceea;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+    -webkit-box-shadow: 0px 0px 10px -4px #337ab7;
+    -moz-box-shadow: 0px 0px 10px -4px #337ab7;
+    box-shadow: 0px 0px 10px -4px #337ab7;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: 125px;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    } 50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+}
+
+.CTableProviderToolbar {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #cdcdcd;
+    box-shadow: 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 #fff;
+    text-shadow: 0 1px #fff;
+    position: relative;
+    color: #636363;
+    background: #f8f8f8;
+    background: -moz-linear-gradient(top, #f8f8f8 0%, #e8e8e8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#e8e8e8));
+    background: -webkit-linear-gradient(top, #f8f8f8 0%,#e8e8e8 100%);
+    background: -o-linear-gradient(top, #f8f8f8 0%,#e8e8e8 100%);
+    background: -ms-linear-gradient(top, #f8f8f8 0%,#e8e8e8 100%);
+    background: linear-gradient(top, #f8f8f8 0%,#e8e8e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#e8e8e8',GradientType=0 );
+    vertical-align: middle;
+}
+
+.CTableProviderToolbar:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.CTableProviderToolbar h6 {
+    margin: 0;
+    float: left;
+    display: block;
+    padding: 10px 14px 8px 14px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.CTableProviderToolbar h6.success {
+    background-color: #337ab7;
+    text-shadow: 0 0 1px #333;
+    color: #fff;
+}
+
+.CTableProviderToolbar h6.error {
+    background-color: #b73333;
+    text-shadow: 0 0 1px #333;
+    color: #fff;
+}
+
+.CTableProviderToolbar .tools {
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.CTableProviderToolbar .tools button,
+.CTableProviderToolbar .tools a {
+    padding: 8px 4px 8px 4px;
+    border-left: 1px solid #c3c3c3;
+    display: block;
+    color: #636363;
+    cursor: pointer;
+    height: 31px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    float: left;
+    background-color: transparent;
+}
+
+.CTableProviderToolbar .tools button:after,
+.CTableProviderToolbar .tools a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.CTableProviderToolbar .tools span.glyphicon {
+
+}
+
+.CTableProviderToolbar .tools .dropdown-menu li {
+    border-bottom: 1px solid #ddd;
+    padding: 4px 6px;
+    font-size: 12px;
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+.CTableProviderToolbar .tools .dropdown-menu li:first-child {
+    padding-top: 0;
+}
+
+.CTableProviderToolbar .tools .dropdown-menu li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.CTableProviderToolbar .tools .dropdown-menu li input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 0 4px 0 0;
+}
+
+.CTableProviderExtraActionHolder {
+    position: relative;
+    padding-bottom: 137px;
+    display: block;
+}
+
+.CTableProviderExtraAction {
+    padding: 4px;
+    margin: 0;
+    font-size: 12px;
+    display: none;
+}
+
+.CTableProviderExtraAction * {
+    font-size: 12px;
+}
+
+.CTableProviderExtraAction form {
+    margin: 0 0 14px;
+}
+
+.CTableProviderExtraAction form:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.CTableProviderExtraAction .eaform-group {
+    display: block;
+    min-height: 32px;
+    vertical-align: bottom;
+    float: left;
+}
+
+.CTableProviderExtraAction .eaform-group select {
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 32px;
+    border-bottom: 1px solid #cdcdcd;
+    width: 240px;
+}
+
+.CTableProviderExtraAction .eaform-group .eaform-label {
+    padding: 0 0 0 4px;
+    margin: 0;
+    border: none;
+    height: 32px;
+    border-bottom: 1px solid #cdcdcd;
+    width: 240px;
+    display: block;
+    line-height: 32px;
+    cursor: not-allowed;
+}
+
+.CTableProviderExtraAction .eaform-group .chosen-container {
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: auto;
+    width: 240px;
+}
+
+.CTableProviderExtraAction .eaform-group .chosen-container .chosen-single,
+.CTableProviderExtraAction .eaform-group .chosen-container .chosen-choices {
+    padding: 0 0 0 4px;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    width: 240px;
+    background: transparent;
+    min-height: 32px;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.CTableProviderExtraAction .eaform-group .chosen-container .chosen-choices .search-field,
+.CTableProviderExtraAction .eaform-group .chosen-container .chosen-choices input.default {
+    color: #444;
+    min-width: 100%;
+}
+
+.CTableProviderExtraAction .eaform-group .chosen-container .chosen-single > span {
+    font-size: 12px;
+    line-height: 32px;
+}
+.CTableProviderExtraAction .eaform-group .chosen-container.chosen-with-drop .chosen-single > div > b {
+    background-position: -18px 7px;
+}
+
+.CTableProviderExtraAction .eaform-group button {
+    padding: 0 4px;
+    margin: 0;
+    border: 1px solid #cdcdcd;
+    background-color: #337ab7;
+    height: 32px;
+    width: 86px;
+    color: #fff;
+}
+
+.watable .glyphicon.online {
+    color: #22ca19;
+    opacity: 1;
+}
+
+.watable .glyphicon.offline {
+    color: #ca1919;
+    opacity: 1;
+}
+
+.watable tfoot {
+    background: #f9f9f9;
+}
+.watable tfoot tr:first-child td {
+    border-top: 1px solid #cdcdcd;
+}
+.watable tfoot tr:last-child td {
+    border-bottom: 1px solid #cdcdcd;
+}

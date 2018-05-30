@@ -1,0 +1,35 @@
+#CComponentTree ul {
+    list-style: none;
+    padding-left: 44px;
+}
+#CComponentTree ul:first-child {
+    padding-left: 0;
+}
+#CComponentTree ul li{
+
+}
+#CComponentTree ul li > div {
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+#CComponentTree ul li > div span {
+    padding: 8px 12px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #e6eaef;
+    cursor: pointer;
+}
+#CComponentTree ul li[aria-selected="true"] > div span {
+    background: #3d8dbb;
+    color: #fff;
+    font-weight: bold;
+}
+#CComponentTree ul li > div a {
+    padding: 8px 12px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #e6eaef;
+    cursor: pointer;
+    margin: 0 4px 0 0;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>WorkOn (component based application)</h4>
+
+<p>Main things:</p>
+<ol>
+    <li>Auth component (API/WEB) affects (routes, access)</li>
+    <li>RBAC component (WEB) affects (routes, access, another components)</li>
+    <li>Cascade Permissions Component (WEB) affects (any part of application based on components)</li>
+    <li>Dynamic Tree based Component module (WEB) affects (views, partials, rendering parts, any application part)<ol>
+        <li>Depends from C.P.C.</li>
+        <li>Base View component</li>
+        <li>Partial View component</li>
+        <li>Rendering parts component</li>
+    </ol></li>
+    <li>TableDataProvider Component (WEB) (Based on php CRM TableDataProvider ideology)<ol>
+        <li>Depends from C.P.C.</li>
+        <li>Backend layer</li>
+        <li>Frontend layer</li>
+    </ol></li>
+    <li>Notification Feed Component (WEB) (Based on php CRM TableDataProvider and CSocketTransport ideology)<ol>
+        <li>Backend layer</li>
+        <li>Frontend layer</li>
+    </ol></li>
+    <li>Global Search Map Component (WEB)<ol>
+        <li>Depends from C.P.C. and related to D.T.C.
+        <li>Backend layer</li>
+        <li>Frontend layer</li>
+    </ol></li>
+    <li>Translation Transfer Component (WEB)<ol>
+        <li>Backend layer</li>
+        <li>Frontend layer</li>
+    </ol></li>
+    <li>Form Delivery Component (WEB)<ol>
+        <li>Frontend layer</li>
+    </ol></li>
+    <li>Document Generator Component (API/WEB)<ol>
+        <li>Backend layer (Partially depends from F.D.C.) depends from C.P.C and related to D.T.C.</li>
+    </ol></li>
+</ol>
+<p>Core things:</p>
+<ol>
+    <li>Behaviours (Any step of lifecycle based on before{SomeMethod} after{SomeMethod})</li>
+    <li>Scenarios (Any data processing schema step by step)</li>
+    <li>Events (Placing event triggers and listeners to any part of code with registration
+    in nosql db for ability enabling/disabling and monitoring)</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<%- include('layout/header.html') %>
+
+<!-- Header -->
+<header id="header">
+    <!--<span class="avatar"><img src="/images/avatar.jpg" alt="" /></span>-->
+    <h1>This is <strong>Visualize</strong>, a responsive site template designed by <a href="http://templated.co">TEMPLATED</a><br />
+        and released for free under the Creative Commons License.</h1>
+    <%- include('layout/sidebar.html') %>
+</header>
+<style>
+    .proposalContainer {
+        display: block;
+        position: relative;
+    }
+    .proposalContainer .proposalAssessment {
+        display: inline-block;
+        position: absolute;
+        top: -8px;
+        right: -4px;
+        -moz-transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        border-radius: 4px;
+        padding: 6px 8px 0px 4px;
+        border: solid 1px rgba(255, 255, 255, 0.25);
+        background-color: rgb(228, 100, 105);
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .proposalContainer .proposalTitle {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0px 38px 0 6px;
+    }
+    .proposalContainer .proposalTitle,
+    .proposalContainer .proposalDescription{
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+    }
+    .proposalContainer .proposalDescription {
+        line-height: 16px;
+        font-size: 14px;
+        padding: 0px 6px;
+    }
+    .proposalContainer .proposalInfo {
+        display: block;
+        -moz-transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        padding: 6px 8px 0px 4px;
+        border: solid 1px rgba(255, 255, 255, 0.25);
+        background-color: rgb(117, 144, 160);
+        font-size: 12px;
+        color: #fff;
+        text-align: left;
+    }
+    .proposalContainer .proposalInfo span {
+        display: block;
+    }
+</style>
+<!-- Main -->
+<section id="main">
+
+    <!-- Thumbnails -->
+    <section class="thumbnails">
+        <div id="feed-pending">
+            <h3 class="thumbnails-title">Feed</h3>
+            <a href="http://loclhost">
+                <div class="proposalContainer">
+                    <div class="proposalAssessment">%23</div>
+                    <div class="proposalTitle">Proposal title</div>
+                    <div class="proposalDescription">Some description of posted proposal</div>
+                    <div class="proposalInfo">
+                        <span>Budget: $50+ / Spent: $6k+</span>
+                        <span>Client: A. Adams</span>
+                        <span>Country: Canada</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div id="feed-accepted">
+            <h3 class="thumbnails-title">Accepted</h3>
+            <a href="http://loclhost">
+                <div class="proposalContainer">
+                    <div class="proposalAssessment">%23</div>
+                    <div class="proposalTitle">Proposal title</div>
+                    <div class="proposalDescription">Some description of posted proposal</div>
+                    <div class="proposalInfo">
+                        <span>Budget: $50+ / Spent: $6k+</span>
+                        <span>Client: A. Adams</span>
+                        <span>Country: Canada</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div id="feed-expiration">
+            <h3 class="thumbnails-title">Close to expiration</h3>
+            <a href="http://loclhost">
+                <div class="proposalContainer">
+                    <div class="proposalAssessment">%23</div>
+                    <div class="proposalTitle">Proposal title</div>
+                    <div class="proposalDescription">Some description of posted proposal</div>
+                    <div class="proposalInfo">
+                        <span>Budget: $50+ / Spent: $6k+</span>
+                        <span>Client: A. Adams</span>
+                        <span>Country: Canada</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--<div>
+            <a href="/images/fulls/06.jpg">
+                <img src="/images/thumbs/06.jpg" alt="" />
+                <h3>Lorem ipsum dolor sit amet</h3>
+            </a>
+            <a href="/images/fulls/07.jpg">
+                <img src="/images/thumbs/07.jpg" alt="" />
+                <h3>Lorem ipsum dolor sit amet</h3>
+            </a>
+        </div>-->
+    </section>
+
+</section>
+<%- include('layout/footer.html')%>

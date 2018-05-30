@@ -1,0 +1,40 @@
+{
+  "db": {
+    "mongo": {
+      "host": "192.168.88.70",
+      "port": 27017,
+      "authDb": "admin",
+      "authMechanism": "MONGODB-CR",
+      "user": "crm-admin",
+      "pass": "7hRaZl",
+      "db": "workon"
+    },
+    "mysql": {
+      "host": "localhost",
+      "port": 3306,
+      "user": "",
+      "pass": "",
+      "db": ""
+    },
+    "mssql": {
+      "host": "localhost",
+      "port": "1433",
+      "user": "",
+      "pass": "",
+      "db": ""
+    }
+  },
+  "tcp": {
+    "socket": {
+      "host": "192.168.88.70",
+      "port": 4002
+    },
+    "http": {
+      "host": "192.168.88.70",
+      "port": 4003,
+      "auth-keys": [
+        "a76014c5-b9a6-4938-89d3-40f904eef84a"
+      ]
+    }
+  }
+}
